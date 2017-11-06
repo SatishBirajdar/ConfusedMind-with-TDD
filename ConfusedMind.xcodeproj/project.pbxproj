@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E30209601FAD663400DEBD56 /* Hamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E302095F1FAD663400DEBD56 /* Hamcrest.framework */; };
 		E30734041FAA97DD0021E399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30734031FAA97DD0021E399 /* AppDelegate.swift */; };
-		E30734061FAA97DD0021E399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30734051FAA97DD0021E399 /* ViewController.swift */; };
+		E30734061FAA97DD0021E399 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30734051FAA97DD0021E399 /* ChartViewController.swift */; };
 		E30734091FAA97DD0021E399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30734071FAA97DD0021E399 /* Main.storyboard */; };
 		E307340C1FAA97DD0021E399 /* ConfusedMind.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E307340A1FAA97DD0021E399 /* ConfusedMind.xcdatamodeld */; };
 		E307340E1FAA97DD0021E399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E307340D1FAA97DD0021E399 /* Assets.xcassets */; };
 		E30734111FAA97DD0021E399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E307340F1FAA97DD0021E399 /* LaunchScreen.storyboard */; };
-		E307341C1FAA97DD0021E399 /* ConfusedMindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307341B1FAA97DD0021E399 /* ConfusedMindTests.swift */; };
+		E307341C1FAA97DD0021E399 /* ChartViewPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307341B1FAA97DD0021E399 /* ChartViewPresenterTest.swift */; };
 		E30734271FAA97DD0021E399 /* ConfusedMindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30734261FAA97DD0021E399 /* ConfusedMindUITests.swift */; };
+		E30734351FAA984E0021E399 /* ChartViewPresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30734341FAA984E0021E399 /* ChartViewPresenterContract.swift */; };
+		E30734371FAA98630021E399 /* ChartViewPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30734361FAA98630021E399 /* ChartViewPresenterImpl.swift */; };
+		E307343E1FAAAA3E0021E399 /* ChartViewDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307343D1FAAAA3E0021E399 /* ChartViewDataService.swift */; };
+		E30734411FAAC1E30021E399 /* ManagedContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30734401FAAC1E30021E399 /* ManagedContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +40,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E302095F1FAD663400DEBD56 /* Hamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hamcrest.framework; path = Carthage/Build/iOS/Hamcrest.framework; sourceTree = "<group>"; };
 		E30734001FAA97DD0021E399 /* ConfusedMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConfusedMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30734031FAA97DD0021E399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E30734051FAA97DD0021E399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E30734051FAA97DD0021E399 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		E30734081FAA97DD0021E399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E307340B1FAA97DD0021E399 /* ConfusedMind.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConfusedMind.xcdatamodel; sourceTree = "<group>"; };
 		E307340D1FAA97DD0021E399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E30734101FAA97DD0021E399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E30734121FAA97DD0021E399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E30734171FAA97DD0021E399 /* ConfusedMindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfusedMindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E307341B1FAA97DD0021E399 /* ConfusedMindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfusedMindTests.swift; sourceTree = "<group>"; };
+		E307341B1FAA97DD0021E399 /* ChartViewPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewPresenterTest.swift; sourceTree = "<group>"; };
 		E307341D1FAA97DD0021E399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E30734221FAA97DD0021E399 /* ConfusedMindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfusedMindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30734261FAA97DD0021E399 /* ConfusedMindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfusedMindUITests.swift; sourceTree = "<group>"; };
 		E30734281FAA97DD0021E399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E30734341FAA984E0021E399 /* ChartViewPresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewPresenterContract.swift; sourceTree = "<group>"; };
+		E30734361FAA98630021E399 /* ChartViewPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewPresenterImpl.swift; sourceTree = "<group>"; };
+		E307343D1FAAAA3E0021E399 /* ChartViewDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewDataService.swift; sourceTree = "<group>"; };
+		E30734401FAAC1E30021E399 /* ManagedContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E30209601FAD663400DEBD56 /* Hamcrest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E302095E1FAD663400DEBD56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E302095F1FAD663400DEBD56 /* Hamcrest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E30733F71FAA97DD0021E399 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +102,7 @@
 				E307341A1FAA97DD0021E399 /* ConfusedMindTests */,
 				E30734251FAA97DD0021E399 /* ConfusedMindUITests */,
 				E30734011FAA97DD0021E399 /* Products */,
+				E302095E1FAD663400DEBD56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,11 +120,12 @@
 			isa = PBXGroup;
 			children = (
 				E30734031FAA97DD0021E399 /* AppDelegate.swift */,
-				E30734051FAA97DD0021E399 /* ViewController.swift */,
+				E307343A1FAA98C50021E399 /* Chart View */,
 				E30734071FAA97DD0021E399 /* Main.storyboard */,
 				E307340D1FAA97DD0021E399 /* Assets.xcassets */,
 				E307340F1FAA97DD0021E399 /* LaunchScreen.storyboard */,
 				E30734121FAA97DD0021E399 /* Info.plist */,
+				E30734421FAAC1EC0021E399 /* CoreData */,
 				E307340A1FAA97DD0021E399 /* ConfusedMind.xcdatamodeld */,
 			);
 			path = ConfusedMind;
@@ -113,7 +134,7 @@
 		E307341A1FAA97DD0021E399 /* ConfusedMindTests */ = {
 			isa = PBXGroup;
 			children = (
-				E307341B1FAA97DD0021E399 /* ConfusedMindTests.swift */,
+				E307341B1FAA97DD0021E399 /* ChartViewPresenterTest.swift */,
 				E307341D1FAA97DD0021E399 /* Info.plist */,
 			);
 			path = ConfusedMindTests;
@@ -126,6 +147,49 @@
 				E30734281FAA97DD0021E399 /* Info.plist */,
 			);
 			path = ConfusedMindUITests;
+			sourceTree = "<group>";
+		};
+		E30734381FAA98A80021E399 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E30734051FAA97DD0021E399 /* ChartViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E30734391FAA98B00021E399 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E30734361FAA98630021E399 /* ChartViewPresenterImpl.swift */,
+				E30734341FAA984E0021E399 /* ChartViewPresenterContract.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E307343A1FAA98C50021E399 /* Chart View */ = {
+			isa = PBXGroup;
+			children = (
+				E30734391FAA98B00021E399 /* Presenter */,
+				E30734381FAA98A80021E399 /* View */,
+				E307343F1FAAAA450021E399 /* Model */,
+			);
+			path = "Chart View";
+			sourceTree = "<group>";
+		};
+		E307343F1FAAAA450021E399 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E307343D1FAAAA3E0021E399 /* ChartViewDataService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E30734421FAAC1EC0021E399 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E30734401FAAC1E30021E399 /* ManagedContext.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +219,7 @@
 				E30734131FAA97DD0021E399 /* Sources */,
 				E30734141FAA97DD0021E399 /* Frameworks */,
 				E30734151FAA97DD0021E399 /* Resources */,
+				E302095D1FAD65B100DEBD56 /* Carthage copy */,
 			);
 			buildRules = (
 			);
@@ -257,14 +322,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E302095D1FAD65B100DEBD56 /* Carthage copy */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Hamcrest.framework",
+			);
+			name = "Carthage copy";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E30733FC1FAA97DD0021E399 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E30734061FAA97DD0021E399 /* ViewController.swift in Sources */,
+				E30734351FAA984E0021E399 /* ChartViewPresenterContract.swift in Sources */,
+				E30734061FAA97DD0021E399 /* ChartViewController.swift in Sources */,
 				E307340C1FAA97DD0021E399 /* ConfusedMind.xcdatamodeld in Sources */,
 				E30734041FAA97DD0021E399 /* AppDelegate.swift in Sources */,
+				E30734411FAAC1E30021E399 /* ManagedContext.swift in Sources */,
+				E30734371FAA98630021E399 /* ChartViewPresenterImpl.swift in Sources */,
+				E307343E1FAAAA3E0021E399 /* ChartViewDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E307341C1FAA97DD0021E399 /* ConfusedMindTests.swift in Sources */,
+				E307341C1FAA97DD0021E399 /* ChartViewPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +550,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PSKWPY773;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ConfusedMindTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.SBSoftwares.ConfusedMindTests;
@@ -480,6 +571,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PSKWPY773;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ConfusedMindTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.SBSoftwares.ConfusedMindTests;

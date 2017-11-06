@@ -1,0 +1,9 @@
+
+#Build
+Carthage/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcarchive
+*.xcscmblueprint
