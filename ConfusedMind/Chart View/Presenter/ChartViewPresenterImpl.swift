@@ -32,6 +32,7 @@ class ChartViewPresenterImpl: ChartViewPresenter {
 //            self?.userView?.finishLoading()
             if(options.count == 0){
                 self?.view?.setChartViewWithNoData()
+                
 //                self?.userView?.setEmptyUsers()
             }else{
                 self?.view?.setChartViewWithData()

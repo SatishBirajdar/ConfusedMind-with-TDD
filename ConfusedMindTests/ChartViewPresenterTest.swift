@@ -14,7 +14,7 @@ import CoreData
 
 class ChartViewPresenterTest: XCTestCase {
     
-    var subject: ChartViewPresenter?
+    fileprivate var subject: ChartViewPresenter?
     var service: ChartViewDataServiceMock?
     
     override func setUp() {
@@ -66,6 +66,8 @@ class ChartViewPresenterTest: XCTestCase {
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
+        
+        print("My managed object: ", managedContext)
         return options
     }
 }

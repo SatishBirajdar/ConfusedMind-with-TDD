@@ -8,9 +8,18 @@
 
 import UIKit
 import CoreData
+import Charts
 
 class ChartViewController: UIViewController {
 
+    @IBOutlet weak var speakerButton: UIButton!
+    
+    @IBOutlet weak var emptyChartView: UIView!
+    @IBOutlet weak var emptyChartViewLabel: UILabel!
+    
+    @IBOutlet weak var nonEmptyChartView: PieChartView!
+    @IBOutlet weak var spinButton: UIButton!
+    
     var presenter: ChartViewPresenter = ChartViewPresenterImpl (chartService: ChartViewDataService())
     var options: [Option] = []
     
@@ -30,14 +39,12 @@ class ChartViewController: UIViewController {
         presenter.attachView(view: self as! ChartViewPresenterView)
         presenter.getChartData()
         
-//        presenter.attachView2(view: self as! ChartViewPresenterView)
     }
     
-//    func asxcv(){
-//    self.presenter
-//    }
     
-
+    @IBAction func spinButtonClicked(_ sender: UIButton) {
+    }
+    
 }
 
 extension ChartViewController: ChartViewPresenterView {

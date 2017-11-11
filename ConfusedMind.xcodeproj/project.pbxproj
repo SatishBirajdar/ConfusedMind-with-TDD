@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E300CC861FB0BD440010B748 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E300CC851FB0BD440010B748 /* Charts.framework */; };
 		E30209601FAD663400DEBD56 /* Hamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E302095F1FAD663400DEBD56 /* Hamcrest.framework */; };
 		E30734041FAA97DD0021E399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30734031FAA97DD0021E399 /* AppDelegate.swift */; };
 		E30734061FAA97DD0021E399 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30734051FAA97DD0021E399 /* ChartViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E300CC851FB0BD440010B748 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		E302095F1FAD663400DEBD56 /* Hamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hamcrest.framework; path = Carthage/Build/iOS/Hamcrest.framework; sourceTree = "<group>"; };
 		E30734001FAA97DD0021E399 /* ConfusedMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConfusedMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30734031FAA97DD0021E399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E300CC861FB0BD440010B748 /* Charts.framework in Frameworks */,
 				E30209601FAD663400DEBD56 /* Hamcrest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +93,7 @@
 		E302095E1FAD663400DEBD56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E300CC851FB0BD440010B748 /* Charts.framework */,
 				E302095F1FAD663400DEBD56 /* Hamcrest.framework */,
 			);
 			name = Frameworks;
@@ -330,6 +334,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Hamcrest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
 			);
 			name = "Carthage copy";
 			outputPaths = (
