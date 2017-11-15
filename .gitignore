@@ -7,4 +7,4 @@ Carthage/
 *.dSYM
 *.xcarchive
 *.xcscmblueprint
-ConfusedMind.xcodeproj/xcuserdata/satishbirajdar.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+xcuserdata/*
