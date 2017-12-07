@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites name='ConfusedMindTests.xctest' tests='5' failures='0'>
   <testsuite name='ConfusedMindUITests.ConfusedMindUITests' tests='1' failures='0'>
-    <testcase classname='ConfusedMindUITests.ConfusedMindUITests' name='testExample' time='7.402'/>
+    <testcase classname='ConfusedMindUITests.ConfusedMindUITests' name='testExample' time='7.670'/>
   </testsuite>
   <testsuite name='ConfusedMindTests.ChartViewControllerTest' tests='1' failures='0'>
     <testcase classname='ConfusedMindTests.ChartViewControllerTest' name='testSpinButtonClicked' time='0.001'/>
   </testsuite>
   <testsuite name='ConfusedMindTests.ChartViewPresenterTest' tests='2' failures='0'>
-    <testcase classname='ConfusedMindTests.ChartViewPresenterTest' name='testChartDataWithOneItems' time='0.021'/>
+    <testcase classname='ConfusedMindTests.ChartViewPresenterTest' name='testChartDataWithOneItems' time='0.017'/>
     <testcase classname='ConfusedMindTests.ChartViewPresenterTest' name='testChartDataWithZeroItems' time='0.000'/>
   </testsuite>
   <testsuite name='ConfusedMindTests.ChartViewScreenTest' tests='1' failures='0'>
-    <testcase classname='ConfusedMindTests.ChartViewScreenTest' name='testChartView' time='0.054'/>
+    <testcase classname='ConfusedMindTests.ChartViewScreenTest' name='testChartView' time='0.046'/>
   </testsuite>
 </testsuites>

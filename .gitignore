@@ -10,7 +10,12 @@ Carthage/
 *.xcscmblueprint
 *.bash_profile
 
+#Fastlane
+*.xml
+
+
 **/xcuserdata
 *.xcuserdatad
 *.xcbkptlist
 
+ConfusedMind.xcodeproj/xcuserdata/satishbirajdar.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
