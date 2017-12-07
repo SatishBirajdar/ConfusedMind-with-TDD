@@ -40,11 +40,6 @@ Runs all the tests
 fastlane ios test_unit
 ```
 Runs unit tests only
-### ios test_ui
-```
-fastlane ios test_ui
-```
-Runs UI tests only
 ### ios push
 ```
 fastlane ios push

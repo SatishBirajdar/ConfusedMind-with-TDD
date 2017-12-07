@@ -28,7 +28,7 @@ platform :ios do
   desc "Runs all the tests"
   lane :test do
     test_unit
-    test_ui
+    
   end
 
   desc "Runs unit tests only"
@@ -38,12 +38,12 @@ platform :ios do
       )
   end
 
-  desc "Runs UI tests only"
-  lane :test_ui do
-    scan(
-      scheme: "ConfusedMindUITests"
-      )
-  end
+  #desc "Runs UI tests only"
+  #lane :test_ui do
+  #  scan(
+  #    scheme: "ConfusedMindUITests"
+  #    )
+  # end
 
     desc "Runs all the tests and then pushes only if they succeed"
   lane :push do
