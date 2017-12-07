@@ -36,9 +36,10 @@ class ChartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        presenter.attachView(view: self as! ChartViewPresenterView)
+        presenter.attachView(view: self as ChartViewPresenterView)
         presenter.getChartData()
         
+        nonEmptyChartView.noDataText = ""
     }
     
     

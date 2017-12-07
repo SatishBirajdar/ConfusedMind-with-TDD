@@ -21,7 +21,10 @@
 		E30734371FAA98630021E399 /* ChartViewPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30734361FAA98630021E399 /* ChartViewPresenterImpl.swift */; };
 		E307343E1FAAAA3E0021E399 /* ChartViewDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307343D1FAAAA3E0021E399 /* ChartViewDataService.swift */; };
 		E30734411FAAC1E30021E399 /* ManagedContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30734401FAAC1E30021E399 /* ManagedContext.swift */; };
+		E30D3A2E1FCE674F0049394E /* ChartViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30D3A2D1FCE674F0049394E /* ChartViewControllerTest.swift */; };
 		E31561D81FB91E9300D4ED1D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E300CC851FB0BD440010B748 /* Charts.framework */; };
+		E342D5B61FD8B8C40040010B /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E342D5B01FD604AA0040010B /* FBSnapshotTestCase.framework */; };
+		E342D5B71FD8B8CD0040010B /* ChartViewScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D5B21FD605990040010B /* ChartViewScreenTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		E30734361FAA98630021E399 /* ChartViewPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewPresenterImpl.swift; sourceTree = "<group>"; };
 		E307343D1FAAAA3E0021E399 /* ChartViewDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewDataService.swift; sourceTree = "<group>"; };
 		E30734401FAAC1E30021E399 /* ManagedContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedContext.swift; sourceTree = "<group>"; };
+		E30D3A2D1FCE674F0049394E /* ChartViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewControllerTest.swift; sourceTree = "<group>"; };
+		E342D5B01FD604AA0040010B /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
+		E342D5B21FD605990040010B /* ChartViewScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewScreenTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E300CC861FB0BD440010B748 /* Charts.framework in Frameworks */,
+				E342D5B61FD8B8C40040010B /* FBSnapshotTestCase.framework in Frameworks */,
 				E30209601FAD663400DEBD56 /* Hamcrest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +102,7 @@
 		E302095E1FAD663400DEBD56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E342D5B01FD604AA0040010B /* FBSnapshotTestCase.framework */,
 				E300CC851FB0BD440010B748 /* Charts.framework */,
 				E302095F1FAD663400DEBD56 /* Hamcrest.framework */,
 			);
@@ -141,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				E307341B1FAA97DD0021E399 /* ChartViewPresenterTest.swift */,
+				E30D3A2D1FCE674F0049394E /* ChartViewControllerTest.swift */,
+				E342D5B21FD605990040010B /* ChartViewScreenTest.swift */,
 				E307341D1FAA97DD0021E399 /* Info.plist */,
 			);
 			path = ConfusedMindTests;
@@ -338,6 +348,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Hamcrest.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSnapshotTestCase.framework",
 			);
 			name = "Carthage copy";
 			outputPaths = (
@@ -382,7 +393,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E342D5B71FD8B8CD0040010B /* ChartViewScreenTest.swift in Sources */,
 				E307341C1FAA97DD0021E399 /* ChartViewPresenterTest.swift in Sources */,
+				E30D3A2E1FCE674F0049394E /* ChartViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +635,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PSKWPY773;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ConfusedMindUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.SBSoftwares.ConfusedMindUITests;
@@ -638,6 +655,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PSKWPY773;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ConfusedMindUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.SBSoftwares.ConfusedMindUITests;

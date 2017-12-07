@@ -1,2 +1,3 @@
 github "danielgindi/Charts" "v3.0.4"
+github "facebook/ios-snapshot-test-case" "2.1.4"
 github "nschum/SwiftHamcrest" "1.0.0"

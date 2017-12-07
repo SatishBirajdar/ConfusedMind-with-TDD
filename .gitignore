@@ -1,5 +1,6 @@
 
 #Build
+build/
 Carthage/
 *.hmap
 *.ipa
@@ -7,4 +8,9 @@ Carthage/
 *.dSYM
 *.xcarchive
 *.xcscmblueprint
-xcuserdata/*
+*.bash_profile
+
+**/xcuserdata
+*.xcuserdatad
+*.xcbkptlist
+

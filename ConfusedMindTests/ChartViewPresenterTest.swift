@@ -22,7 +22,6 @@ class ChartViewPresenterTest: XCTestCase {
     }
     
     override func tearDown() {
-        
     }
     
     func testChartDataWithZeroItems(){

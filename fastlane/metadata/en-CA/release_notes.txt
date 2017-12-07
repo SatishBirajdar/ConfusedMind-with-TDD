@@ -1,0 +1,4 @@
+1. Chart UI fixes. 
+2. Speaker is enabled by default
+3. Changed “Item list” to “Options”
+4. Updated some icons
